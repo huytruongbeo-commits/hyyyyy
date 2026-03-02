@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            /* Màu nền xanh xám nhạt đồng bộ với Intro */
+            background-color: #f4f7f9; 
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .gallery-container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            background: white;
+            margin-bottom: 50px;
+            border-radius: 8px; /* Bo góc nhẹ kiểu khung tranh */
+            overflow: hidden;
+            /* Đổ bóng sâu hơn một chút để tạo sự cao cấp */
+            box-shadow: 0 10px 30px rgba(0,74,153,0.08); 
+            /* Viền xanh dương hoàng gia rất mảnh ở dưới cùng */
+            border-bottom: 4px solid #004a99; 
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        /* Hiệu ứng phóng to nhẹ khi di chuột vào ảnh */
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .caption {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .caption h3 {
+            margin: 0 0 12px 0;
+            /* Màu xanh hoàng gia đồng bộ */
+            color: #004a99; 
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .caption p {
+            margin: 0;
+            /* Màu xám xanh nhẹ nhàng */
+            color: #546e7a; 
+            font-size: 1.05rem;
+            font-weight: 400;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* Dấu gạch ngang màu vàng kim đặc trưng */
+        .caption h3::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #d4af37;
+            margin: 12px auto 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="lixi.JPG" alt="Nhận lì xì">
+        <div class="caption">
+            <h3>Lì xì tết</h3>
+            <p>Ông bà lì xì lấy lộc cho con cháu .</p>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="chua.JPG" alt="Đi chùa">
+        <div class="caption">
+            <h3>Đi chùa cúng tết</h3>
+            <p>Đi chùa cầu may mắn cho năm mới.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

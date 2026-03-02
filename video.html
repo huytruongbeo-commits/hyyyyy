@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            /* Màu nền xanh xám nhạt đồng bộ toàn trang */
+            background-color: #f4f7f9; 
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .video-title {
+            color: #004a99; /* Xanh dương hoàng gia */
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            display: inline-block;
+            padding-bottom: 15px;
+            position: relative;
+        }
+
+        .video-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            width: 60%;
+            height: 3px;
+            background-color: #d4af37; /* Gạch dưới màu vàng kim */
+            border-radius: 2px;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,74,153,0.1);
+            border: 1px solid #e0e6ed;
+        }
+
+        .iframe-responsive {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* Tỷ lệ 16:9 */
+            border-radius: 8px;
+            background-color: #000; /* Nền đen trong lúc chờ video load */
+        }
+
+        .iframe-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-description {
+            margin-top: 25px;
+            color: #546e7a;
+            line-height: 1.8;
+            font-weight: 400;
+            font-size: 1.1rem;
+        }
+
+        .video-description b {
+            color: #b8860b; /* Màu vàng đậm rước lộc */
+            font-size: 1.2rem;
+        }
+
+        .gold-icon {
+            color: #d4af37;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="video-title">Phim Ngắn: Khởi Đầu Thịnh Vượng</h2>
+
+    <div class="video-container">
+        <div class="iframe-responsive">
+            <iframe 
+                src="tet.mp4" 
+                title="Video Chúc Tết Bính Ngọ" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <div class="video-description">
+            <p>
+                  <b>Nhảy tết</b> chúc Tết Bính Ngọ 2026! 
+              
+                <br>
+              sự vui mừng khi tết đên <strong> ok.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

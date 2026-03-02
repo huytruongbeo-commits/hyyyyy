@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f7f9; /* Màu nền xanh xám nhẹ đồng bộ */
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .customs-section {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            color: #004a99; /* Xanh dương hoàng gia */
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .dot-divider {
+            color: #d4af37; /* Màu vàng kim */
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+            letter-spacing: 10px;
+        }
+
+        /* Bố cục lưới */
+        .customs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .custom-card {
+            background: #ffffff;
+            padding: 35px 25px;
+            border-radius: 12px;
+            border: 1px solid #e0e6ed;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hiệu ứng hover sang trọng */
+        .custom-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,74,153,0.1);
+            border-color: #d4af37;
+        }
+
+        /* Điểm nhấn góc thẻ */
+        .custom-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background-color: #d4af37;
+            transition: height 0.3s ease;
+        }
+
+        .custom-card:hover::before {
+            height: 100%;
+        }
+
+        .custom-card h3 {
+            color: #004a99;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .custom-card p {
+            color: #546e7a;
+            font-size: 1rem;
+            line-height: 1.7;
+            font-weight: 400;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="customs-section">
+        <h2 class="section-title">Nghi Lễ Truyền Thống</h2>
+        <div class="dot-divider">···</div>
+
+        <div class="customs-grid">
+            <div class="custom-card">
+                <h3>Khai Bút Đầu Xuân</h3>
+                <p>Những nét chữ đầu tiên của năm mới mang theo ước vọng về sự thông tuệ, học vấn hanh thông và sự nghiệp vững vàng cho năm Bính Ngọ.</p>
+            </div>
+
+            <div class="custom-card">
+                <h3>Lễ Chùa Hái Lộc</h3>
+                <p>Đi lễ chùa đầu năm để tìm về sự thanh tịnh trong tâm hồn, cầu mong sức khỏe cho gia đình và hái một nhành lộc nhỏ mang may mắn về nhà.</p>
+            </div>
+
+            <div class="custom-card">
+                <h3>Thưởng Trà Khai Xuân</h3>
+                <p>Nét văn hóa thanh tao khi nhâm nhi chén trà mạn cùng mứt Tết, cùng nhau ôn lại chuyện cũ và bàn về những dự định khởi sắc trong tương lai.</p>
+            </div>
+
+            <div class="custom-card">
+                <h3>Hội Xuân Đình Làng</h3>
+                <p>Tham gia các trò chơi dân gian rộn ràng như chọi gà, kéo co hay đánh đu, thắt chặt tình làng nghĩa xóm trong những ngày đầu năm mới.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
